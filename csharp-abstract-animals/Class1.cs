@@ -17,7 +17,7 @@ namespace csharp_abstract_animals
         }
     }
 
-    public class Dog : Animal
+    public class Dog : Animal, IMovementMethod
     {
         public override void DoCall()
         {
@@ -27,9 +27,17 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("Omnivore, but love treats in particular");
         }
+        public void ToSwim()
+        {
+            Console.WriteLine("I'm not born to swim, but I do it pretty good, cause I'm a good boy");
+        }
+        public void ToFly()
+        {
+            Console.WriteLine("I cannot fly, *sad woof*");
+        }
     }
 
-    public class Sparrow : Animal
+    public class Sparrow : Animal, IMovementMethod
     {
         public override void DoCall()
         {
@@ -39,9 +47,17 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("Grains, seeds, insects, discarded food (in cities)");
         }
+        public void ToFly()
+        {
+            Console.WriteLine("Chip chip I can fly very fast so dogs and humans cannot catch me!!! *flies away*");
+        }
+        public void ToSwim()
+        {
+            Console.WriteLine("I will surely drown and die very badly");
+        }
     }
 
-    public class Eagle : Animal
+    public class Eagle : Animal, IMovementMethod
     {
         public override void DoCall()
         {
@@ -51,9 +67,17 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("They are raptors, so birds are in the diet, but small mammals and fish too");
         }
+        public void ToFly()
+        {
+            Console.WriteLine("I can fly faster than that sparrow, more efficently than that sparrow, cause I eat sparrows, I'm a raptor");
+        }
+        public void ToSwim()
+        {
+            Console.WriteLine("Some of my relatives prefere maritime hunting operation, I do admit...");
+        }
     }
 
-    public class Dolphin : Animal
+    public class Dolphin : Animal, IMovementMethod
     {
         public override void DoCall()
         {
@@ -62,6 +86,14 @@ namespace csharp_abstract_animals
         public override void WhatDoUEat()
         {
             Console.WriteLine("Smaller fishes, crustaceans and molluscs");
+        }
+        public void ToSwim()
+        {
+            Console.WriteLine("I'm a very very proficient and fast swimmer, I'm a mammal, but I've evolved that way");
+        }
+        public void ToFly()
+        {
+            Console.WriteLine("I do fly, well... briefly, when I playfully jump out of the water... ");
         }
     }
 

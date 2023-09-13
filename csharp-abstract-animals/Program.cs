@@ -20,6 +20,8 @@
             dog.WhatDoUEat();
             Console.WriteLine("And when a 'dog' sleeps it just");
             dog.Sleep();
+            dog.ToSwim();
+            dog.ToFly();
 
             Console.WriteLine("This is a 'sparrow', the sound that it makes is:");
             sparrow.DoCall();
@@ -27,6 +29,8 @@
             sparrow.WhatDoUEat();
             Console.WriteLine("And when a 'sparrow' sleeps it just");
             sparrow.Sleep();
+            sparrow.ToFly();
+            sparrow.ToSwim();
 
             Console.WriteLine("This is a 'eagle', the sound that it makes is:");
             eagle.DoCall();
@@ -34,6 +38,8 @@
             eagle.WhatDoUEat();
             Console.WriteLine("And when a 'eagle' sleeps it just");
             eagle.Sleep();
+            eagle.ToFly();
+            eagle.ToSwim();
 
             Console.WriteLine("This is a 'dolphin', the sound that it makes is:");
             dolphin.DoCall();
@@ -41,6 +47,8 @@
             dolphin.WhatDoUEat();
             Console.WriteLine("And when a 'dolphin' sleeps it just");
             dolphin.Sleep();
+            dolphin.ToSwim();
+            dolphin.ToFly();
         }
     }
 }
