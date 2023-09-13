@@ -22,7 +22,7 @@
                 animal.ToFly();
                 animal.ToSwim();
             }
-
         }
+        // Implementa un'interfaccia che invece di essere IMovementMethod sia tipo "ICompiAzione" e quindi definire per ogni animale il metodo, se nuota o vola
     }
 }
