@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
+    // --------------------------CLASSE ASTRATTA ANIMALE--------------------------------
     public abstract class Animal
     {
         public abstract void DoCall();
@@ -17,6 +18,7 @@ namespace csharp_abstract_animals
         }
     }
 
+    // ------------------------------CANE---------------------------
     public class Dog : Animal, IMovementMethod
     {
         public override void DoCall()
@@ -37,6 +39,7 @@ namespace csharp_abstract_animals
         }
     }
 
+    //-----------------------------------PASSEROTTO--------------------------------
     public class Sparrow : Animal, IMovementMethod
     {
         public override void DoCall()
@@ -57,6 +60,7 @@ namespace csharp_abstract_animals
         }
     }
 
+    //----------------------------------AQUILA--------------------------------------
     public class Eagle : Animal, IMovementMethod
     {
         public override void DoCall()
@@ -77,6 +81,7 @@ namespace csharp_abstract_animals
         }
     }
 
+    //----------------------------------DELFINO------------------------------------
     public class Dolphin : Animal, IMovementMethod
     {
         public override void DoCall()

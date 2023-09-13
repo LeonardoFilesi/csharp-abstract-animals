@@ -4,51 +4,25 @@
     {
         static void Main()
         {
-
-            Dog dog = new Dog();
-           
-            Sparrow sparrow = new Sparrow();
-          
-            Eagle eagle = new Eagle();
-            
-            Dolphin dolphin = new Dolphin();
+            List<Animal> Animals = new List<Animal>();
+            Animals.Add(new Dog());
+            Animals.Add(new Sparrow());
+            Animals.Add(new Eagle());
+            Animals.Add(new Dolphin());
 
             Console.WriteLine("Here is a list of animals and some of their characteristics:");
-            Console.WriteLine("This is a 'dog', the sound that it makes is:");
-            dog.DoCall();
-            Console.WriteLine("The 'dog' diet is:");
-            dog.WhatDoUEat();
-            Console.WriteLine("And when a 'dog' sleeps it just");
-            dog.Sleep();
-            dog.ToSwim();
-            dog.ToFly();
+            foreach (Animal animal in Animals)
+            {
+                Console.WriteLine("The sound that this animal makes is:");
+                animal.DoCall();
+                Console.WriteLine("The 'sparrow' diet is:");
+                animal.WhatDoUEat();
+                Console.WriteLine("And when a 'sparrow' sleeps it just");
+                animal.Sleep();
+                animal.ToFly();
+                animal.ToSwim();
+            }
 
-            Console.WriteLine("This is a 'sparrow', the sound that it makes is:");
-            sparrow.DoCall();
-            Console.WriteLine("The 'sparrow' diet is:");
-            sparrow.WhatDoUEat();
-            Console.WriteLine("And when a 'sparrow' sleeps it just");
-            sparrow.Sleep();
-            sparrow.ToFly();
-            sparrow.ToSwim();
-
-            Console.WriteLine("This is a 'eagle', the sound that it makes is:");
-            eagle.DoCall();
-            Console.WriteLine("The 'eagle' diet is:");
-            eagle.WhatDoUEat();
-            Console.WriteLine("And when a 'eagle' sleeps it just");
-            eagle.Sleep();
-            eagle.ToFly();
-            eagle.ToSwim();
-
-            Console.WriteLine("This is a 'dolphin', the sound that it makes is:");
-            dolphin.DoCall();
-            Console.WriteLine("The 'dolphin' diet is:");
-            dolphin.WhatDoUEat();
-            Console.WriteLine("And when a 'dolphin' sleeps it just");
-            dolphin.Sleep();
-            dolphin.ToSwim();
-            dolphin.ToFly();
         }
     }
 }
